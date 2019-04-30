@@ -46,6 +46,8 @@
   src: url("../fonts/DroidSerif-BoldItalic-webfont.woff") format("woff");
 }
 html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     font-size: 16px;
     line-height: 1.5;
     /*font-family: "Inter UI", "Helvetica Neue", Helvetica, arial, sans-serif;*/
