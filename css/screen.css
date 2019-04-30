@@ -282,7 +282,7 @@ a:focus {
     padding-right: 24px;
   }
   .c-article_content {
-    width: 75%;
+  /*  width: 75%;*/
   }
   .c-author {
     display: block;
