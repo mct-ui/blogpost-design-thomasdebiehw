@@ -42,6 +42,7 @@
   src: url("../fonts/DroidSerif-BoldItalic-webfont.woff") format("woff");
 }
 
+
 /*
   Components: author
 */
@@ -74,7 +75,27 @@
   border-radius: 100%;
   margin-right: 16px;
 }
+/*
+    Components: article
+*/
 
+.c-article_header,
+.c-article_body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.c-article_header {
+  padding: 24px 24px  0;
+}
+
+.c-article_body {
+  padding: 0 24px;
+}
+
+.u-max-width-sm {
+  max-width: 36em;
+}
 /*
     Elements: Page
     ---
@@ -88,11 +109,10 @@ html {
     /*font-family: "Inter UI", "Helvetica Neue", Helvetica, arial, sans-serif;*/
     font-family: "Droid Serif", Georgia, serif;
     color: #5C6366;
-    padding: 48px 24px 24px;
+    box-sizing: border-box;
 }
 
 body {
-    max-width: 42em;
     margin: 0 auto;
 }
 
@@ -232,8 +252,16 @@ a:focus {
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
+  .c-article_header {
+    padding: 48px 48px 24px;
+  }
+  .c-article_author {
+    padding-bottom: 24px;
+  }
+  .c-article_body {
+    padding: 24px 48px;
+  }
     html {
-        padding: 48px 48px 24px;
     }
     h1 {
         font-size: 58px;
@@ -243,7 +271,26 @@ a:focus {
 
 /* Large devices (landscape tablets, desktops, 992px and up) */
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+
+  .c-article_body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .c-article_author {
+    width: 25%;
+    padding-right: 24px;
+  }
+  .c-article_content {
+    width: 75%;
+  }
+  .c-author {
+    display: block;
+  }
+  .c-author_image {
+    margin-bottom: 16px;
+  }
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
 
